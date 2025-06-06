@@ -1,0 +1,70 @@
+/* ./components/Layout.css */
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.nav-header {
+  background-color: #1976d2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.site-logo {
+  font-size: 2rem;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links a.active {
+  border-bottom: 2px solid white;
+}
+.theme-toggle {
+  background: white;
+  color: #1976d2;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+}
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+.footer-icon:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.site-logo {
+  cursor: pointer;
+}
